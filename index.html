@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物车</title>
+	<link rel="stylesheet" href="css/index.css">
+	<script src="js/index.js"></script>
+</head>
+<body>
+    <!-- 头部导航 -->
+	<header class="header">
+        <!-- 头部左边部分 -->
+		<div class="header-item-left">
+			<a href="javascript:;"><img src="img/logo.png" alt=""></a>
+			<ul>
+				<a href="javascript:;"><li>课程</li></a>
+				<a href="javascript:;"><li>职业路径</li></a>
+				<a href="javascript:;"><li>实战</li></a>
+				<a href="javascript:;"><li>猿问</li></a>
+				<a href="javascript:;"><li>手记</li></a>
+			</ul>
+		</div>
+        <!-- 头部右边部分 -->
+		<div class="header-item-right">
+			<a href="javascript:;" class="header-item-right_icon_3"></a>
+			<a href="javascript:;" class="header-item-right_icon_2"></a>
+			<a href="javascript:;" class="header-item-right_icon_1"></a>
+			<div class="seek">
+				<span class="placeholder">前端入门</span>
+				<input type="text" class="seek-txt">
+				<a href="" class="seek-icon"></a>
+			</div>
+		</div>
+	</header>
+    <!-- 背景banner部分 -->
+    <section class="banner"></section>
+    <!-- 整个购物车部分 -->
+    <section class="shop">
+    	<h1>我的购物车</h1>
+        <!-- 商品主体 -->
+    	<div class="shop-content">
+            <!-- 商品标题部分 -->
+    		<div class="shop-nav">
+    			<input type="checkbox" class="checkAll" checked="checked">
+    			<label for="box" class="shop-nav-item_1">全选</label>
+    			<span class="shop-nav-item_2">商品名称</span>
+    			<span class="shop-nav-item_3">总价</span>
+    			<span class="shop-nav-item_4">单价</span>
+    			<span class="shop-nav-item_5">数量</span>
+    			<span class="shop-nav-item_6">操作</span>
+    		</div>
+            <!-- 第一行商品 -->
+    		<div class="shop-item">
+    			<input type="checkbox" class="check" checked="checked">
+    			<span>
+    				<a href="" class="shop-item-img_1"></a>
+    				<a href="" class="shop-item-title">前端小白成长记</a>
+    			</span>
+    			<div class="shop-item-price">
+    				<span class="count">¥<b class="countPrice">396</b></span>
+    				<span class="unitPrice">¥<b class="unitPrice-money">396</b></span>
+    				<input type="button" value="-" class="subtract">
+    				<input type="text" value="1" class="amount">
+    				<input type="button" value="+" class="add">
+    			</div>
+    			<span class="shop-item-delete">删除</span>
+    		</div>
+            <!-- 第二行商品 -->
+    		<div class="shop-item">
+    			<input type="checkbox" class="check" checked="checked">
+    			<span>
+    				<a href="" class="shop-item-img_2"></a>
+    				<a href="" class="shop-item-title">前端小白成长记</a>
+    			</span>
+    			<div class="shop-item-price">
+    				<span class="count">¥<b class="countPrice">396</b></span>
+    				<span class="unitPrice">¥<b class="unitPrice-money">396</b></span>
+    				<input type="button" value="-" class="subtract">
+    				<input type="text" value="1" class="amount">
+    				<input type="button" value="+" class="add">
+    			</div>
+    			<span class="shop-item-delete">删除</span>
+    		</div>
+            <!-- 第三行商品 -->
+    		<div class="shop-item">
+    			<input type="checkbox" class="check" checked="checked">
+    			<span>
+    				<a href="" class="shop-item-img_3"></a>
+    				<a href="" class="shop-item-title">前端小白成长记</a>
+    			</span>
+    			<div class="shop-item-price">
+    				<span class="count">¥<b class="countPrice">396</b></span>
+    				<span class="unitPrice">¥<b class="unitPrice-money">396</b></span>
+    				<input type="button" value="-" class="subtract">
+    				<input type="text" value="1" class="amount">
+    				<input type="button" value="+" class="add">
+    			</div>
+    			<span class="shop-item-delete">删除</span>
+    		</div>
+            <!-- 第四行商品 -->
+    		<div class="shop-item">
+    			<input type="checkbox" class="check" checked="checked">
+    			<span>
+    				<a href="" class="shop-item-img_4"></a>
+    				<a href="" class="shop-item-title">前端小白成长记</a>
+    			</span>
+    			<div class="shop-item-price">
+    				<span class="count">¥<b class="countPrice">396</b></span>
+    				<span class="unitPrice">¥<b class="unitPrice-money">396</b></span>
+    				<input type="button" value="-" class="subtract">
+    				<input type="text" value="1" class="amount">
+    				<input type="button" value="+" class="add">
+    			</div>
+    			<span class="shop-item-delete">删除</span>
+    		</div>
+    	</div>
+        <!-- 商品结算部分 -->
+    	<div class="shop-accounts">
+    		<span>应付金额：<b>¥</b><b class="shop-accounts-money">1584</b></span>
+    		<a href="">去结算</a>
+    	</div>
+    </section>
+    <!-- 底部 -->
+    <footer>
+    	<div class="footer-content">
+    		<ul>
+    			<a href=""><li>网站首页</li></a>
+    			<a href=""><li>企业合作</li></a>
+    			<a href=""><li>人才招聘</li></a>
+    			<a href=""><li>联系我们</li></a>
+    			<a href=""><li>讲师招募</li></a>
+    			<a href=""><li>常见问题</li></a>
+    			<a href=""><li>意见反馈</li></a>
+    			<a href=""><li>慕课大学</li></a>
+    			<a href=""><li>友情链接</li></a>
+    		</ul>
+    		<div class="footer-icon">
+    			<span class="footer-icon-weixin_QRcode hide"></span>
+    			<span class="footer-icon-weixin"></span>
+    			<span class="footer-icon-xinlang"></span>
+    			<span class="footer-icon-qq"></span>
+    		</div>
+    	</div>	
+		<p class="footer-description">Copyrigth @ 2017 imooc.com ALL Rigthis Reserved |京ICP备 13016642号-2</p>   	
+    </footer>
+</body>
+</html>
