@@ -7,29 +7,58 @@ window.onload=function(){
       index=0;
       // 全选与反选
       checkAll.onclick=function(){
-      	for(var i=0;i<len;i++){
-          if(checkAll.checked){
-            check[i].checked=true;
-          }else{
-            check[i].checked=false;
-          }
+      	// for(var i=0;i<len;i++){
+       //    if(checkAll.checked){
+       //      check[i].checked=true;
+       //    }else{
+       //      check[i].checked=false;
+       //    }
+       //  }
+       //  paymentMoney();
+       for(var i=0;i<len;i++){
+        if(check[i].getAttribute("check")=="yes"){
+          check[i].setAttribute("check", "no");
+        }else{
+          check[i].setAttribute("check", "yes");
         }
-        paymentMoney();
+        if(checkAll.checked){
+          check[i].checked=true;
+        }else{
+          check[i].checked=false;
+        }
+       }
+       paymentMoney();
       }
-        // 单选框影响全选框  变量的取值与作用域问题，函数封装的问题
+        // 单选框影响全选框  
         for(var i=0;i<len;i++){
-        	check[i].onclick=function(){
-        		if(this.checked){
-        			index++;
-              if(index==len){
-                checkAll.checked=true;
-                }
-        			}else {                  
-              index--;
-              checkAll.checked=false;
-            }
-            paymentMoney();
+        	// check[i].onclick=function(){
+        	// 	if(this.checked){
+        	// 		index++;
+         //      if(index==len){
+         //        checkAll.checked=true;
+         //        }
+        	// 		}else {                  
+         //      index--;
+         //      checkAll.checked=false;
+         //    }
+         check[i].setAttribute("check", "yes");
+         check[i].onclick=function(){
+          if(this.getAttribute("check")=="yes"){
+            this.setAttribute("check", "no");
+          }else{
+            this.setAttribute("check", "yes");
           }
+          var arr=[];
+          for(var i=0;i<len;i++){
+            arr.push(check[i].getAttribute("check"));
+          }
+          if(arr.indexOf("no")==-1){
+            checkAll.checked=true;
+          }else{
+            checkAll.checked=false;
+          }
+          paymentMoney();
+         }
         }
         		
     // 单行商品金额计算  重复代码较多
